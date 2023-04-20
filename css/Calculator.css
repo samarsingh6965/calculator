@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    font-size: 40px;
+    display: none;
+}
+.conatiner{
+    margin-top: 5px;
+    width: 400px;
+    border: 5px solid rgba(94, 91, 91, 0.904);
+    border-radius: 30px;
+    background-color: rgb(54, 53, 53);
+}
+.screen{
+    outline: none;
+    width: 370px;
+    height: 100px;
+    margin: 15px 10px 0px 10px;
+    border: 5px inset black;
+    border-radius:25px;
+    color: black;
+    font-size: 60px;
+    padding-left: 15px;
+    background-image: linear-gradient(#3e8025,rgb(1, 92, 1));
+}
+.start{
+    display: flex;
+    gap: 10px;
+}
+.start-btn{
+    width: 150px;
+    height: 55px;
+    font-size: 35px;
+    border-radius: 10px;
+    background: rgb(4, 235, 4);
+    color: white;
+    border: 5px outset black;
+    margin-left: 10px;
+}
+.clear-btn{
+    width: 190px;
+    height: 55px;
+    font-size: 35px;
+    background: rgb(245, 18, 18);
+    color: white;
+    border-radius: 10px;
+    border: 5px outset black;
+}
+.btn-group{
+    width: 380px;
+    margin: 35px 5px 10px 5px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius:20px ;
+    border: 5px inset black;
+}
+.r1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn{
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    border-radius: 10px;
+    border: 5px outset black;
+}
+@media (max-width:500px){
+    p{
+        display: block;
+    }
+    .conatiner{
+        margin-top: 10px;
+    }
+    .btn-group{
+        margin: 25px 5px;
+    }
+}
