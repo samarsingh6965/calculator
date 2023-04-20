@@ -2,6 +2,17 @@ let string = "";
 var off = ['0']
 let buttons = document.querySelectorAll(".btn");
 
+
+      //backspace button
+
+      function abc(){
+        let b = document.getElementById("on").value;
+        let c = b.substring(0,b.length -1);
+        string = document.getElementById("on").value = c;
+    }
+    
+          //backspace button
+
 //operation Function
 
 Array.from(buttons).forEach((button) => {
@@ -9,7 +20,7 @@ Array.from(buttons).forEach((button) => {
         if (e.target.innerHTML == '=') {
             string = eval(string);
             document.querySelector('#on').value = string;
-        } else if (e.target.innerHTML == 'CLEAR') {
+        } else if (e.target.innerHTML == 'AC') {
             string = "";
             document.querySelector('#on').value = string;
         }else {
