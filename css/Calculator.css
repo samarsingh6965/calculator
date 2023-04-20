@@ -37,7 +37,8 @@ p{
     display: flex;
     gap: 10px;
 }
-.start-btn{
+#start-btn{
+    cursor: pointer;
     width: 150px;
     height: 55px;
     font-size: 35px;
@@ -47,7 +48,8 @@ p{
     border: 5px outset black;
     margin-left: 10px;
 }
-.clear-btn{
+#clear-btn{
+    cursor: pointer;
     width: 190px;
     height: 55px;
     font-size: 35px;
@@ -72,6 +74,7 @@ p{
     gap: 10px;
 }
 .btn{
+    cursor: pointer;
     width: 80px;
     height: 80px;
     font-size: 50px;
