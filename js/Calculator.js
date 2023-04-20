@@ -1,7 +1,8 @@
 let string = "";
 var off = ['0']
-console.log(off)
 let buttons = document.querySelectorAll(".btn");
+
+//operation Function
 
 Array.from(buttons).forEach((button) => {
     button.addEventListener('click', (e) => {
@@ -12,38 +13,39 @@ Array.from(buttons).forEach((button) => {
             string = "";
             document.querySelector('#on').value = string;
         }else {
-            // console.log(e.target);
-
             string = string + e.target.innerHTML;
             document.querySelector('#on').value = string;
         }
 
-    })
-});
+    })});
+
+    //operation Function
+
+    //button disable-enable
 
    document.getElementById('start-btn').addEventListener('click',()=>{
      if(off[0]==='0'){
-         off.pop()
+         off.pop();
          document.querySelector('#on').value = '0';
-         document.getElementById('start-btn').innerHTML = 'ON'
-         document.getElementById("seven").disabled = false
-         document.getElementById("eight").disabled = false
-         document.getElementById("nine").disabled = false
-         document.getElementById("four").disabled = false
-         document.getElementById("five").disabled = false
-         document.getElementById("six").disabled = false
-         document.getElementById("one").disabled = false
-         document.getElementById("two").disabled = false
-         document.getElementById("three").disabled = false
-         document.getElementById("zero").disabled = false
-         document.getElementById("point").disabled = false
-         document.getElementById("plus").disabled = false
-         document.getElementById("subtract").disabled = false
-         document.getElementById("multiply").disabled = false
-         document.getElementById("divide").disabled = false
-         document.getElementById("equal").disabled = false
+         document.getElementById('start-btn').innerHTML = 'ON';
+         document.getElementById("seven").disabled = false;
+         document.getElementById("eight").disabled = false;
+         document.getElementById("nine").disabled = false;
+         document.getElementById("four").disabled = false;
+         document.getElementById("five").disabled = false;
+         document.getElementById("six").disabled = false;
+         document.getElementById("one").disabled = false;
+         document.getElementById("two").disabled = false;
+         document.getElementById("three").disabled = false;
+         document.getElementById("zero").disabled = false;
+         document.getElementById("point").disabled = false;
+         document.getElementById("plus").disabled = false;
+         document.getElementById("subtract").disabled = false;
+         document.getElementById("multiply").disabled = false;
+         document.getElementById("divide").disabled = false;
+         document.getElementById("equal").disabled = false;
         }else{
-            off.push('0')
+            off.push('0');
             document.querySelector('#on').value = '';
             document.getElementById('start-btn').innerHTML = 'OFF'
             document.getElementById("seven").disabled = true;
@@ -62,5 +64,6 @@ Array.from(buttons).forEach((button) => {
             document.getElementById("multiply").disabled = true;
             document.getElementById("divide").disabled = true;
             document.getElementById("equal").disabled = true;
-     }
-   })
+     }});
+
+      //button disable-enable
