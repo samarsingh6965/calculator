@@ -16,7 +16,7 @@ const operationArray = ['_','+','/','*'];
 Array.from(buttons).forEach((button) => {
     button.addEventListener('click', (e) => {
         if (e.target.innerHTML == '=') {
-            string = eval(string);
+            string = eval(string)?.toString();
             document.querySelector('#on').value = string;
         } else if (e.target.innerHTML == 'AC') {
             string = "";
@@ -25,7 +25,7 @@ Array.from(buttons).forEach((button) => {
             if (string.charAt(0) == '0') {
                 string = string.slice(1, 0)
             }
-            const lastChar = string.charAt(string.length - 1);
+            const lastChar = string?.charAt(string.length - 1);
             if(operationArray.includes(lastChar) && operationArray.includes(e.target.innerHTML)){
                 string = string.slice(0,-1)
             }
